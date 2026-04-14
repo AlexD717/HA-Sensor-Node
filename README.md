@@ -6,7 +6,7 @@
 This is a compact sensor node featuring useful sensors to integrate with Home Assistant
 
 ### Why I made this project
-I made this project because I wanted to try and make a integrated PCB with multiple sensors, and use the bare I2C modules. A Home Assistant sensor node is something that would benefit from being compact, using a custom PCB, and is also something I would use in my life for more advanced automations.
+I made this project because I wanted to try and make an integrated PCB with multiple sensors, and use the bare I2C modules. A Home Assistant sensor node is something that would benefit from being compact, using a custom PCB, and is also something I would use in my life for more advanced automations.
 
 ## Features
 - Custom PCB for compact wiring
@@ -20,12 +20,18 @@ I made this project because I wanted to try and make a integrated PCB with multi
 
 ![CAD Moved](./Assets/CAD-Moved.png)
 
+Assembly Animation
+
+https://github.com/user-attachments/assets/c794dc4b-a0a1-4972-ad8c-0202cbf2617a
+
 ## PCB
 
-Drop in the ESP32 and LD2410C sensor into the PCB and solder the connection.
+Drop the ESP32 and LD2410C sensor into the PCB and solder the connection.
 
+Schematic
 ![Schematic](./Assets/Schematic.png)
 
+PCB
 ![PCB](./Assets/PCB.png)
 
 ## BOM
