@@ -1,4 +1,6 @@
 Name,Purpose,Quantity
-XIAO ESP32 C6,Reading sensor data and relaying back to Home AAssistant,1
+XIAO ESP32 C6,Reading sensor data and relaying back to Home Assistant,1
+LD2401C,Measuring human presence,1
+Custom PCB,Connecting all the components and providing sensor/humidity/light sensor values,1
 M3x8 Screws,Attaching PCB and 3d prints together,7
 M3xL3xOD4.2 Heat Set Inserts,Attaching PCB and 3d prints together,7
