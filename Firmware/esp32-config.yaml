@@ -1,0 +1,76 @@
+esphome:
+  name: sensor-node
+  friendly_name: Sunrise Lamp Alarm ESP
+
+esp32:
+  board: seeed_xiao_esp32c6
+  variant: esp32c6
+  framework:
+    type: esp-idf
+
+logger:
+  level: DEBUG
+
+api:
+  encryption:
+    key: "Your_API_Encryption_Key" #TODO: Change this to your API encryption key
+
+ota:
+  - platform: esphome
+    password: "Your_OTA_Password" #TODO: Change this to your OTA password
+
+wifi:
+  ssid: "Your_WiFi_SSID" #TODO: Change this to your WiFi SSID
+  password: "Your_WiFi_Password" #TODO: Change this to your WiFi password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Sunrise Lamp Alarm Fallback Hotspot"
+    password: "Your_Fallback_Password" #TODO: Change this to your fallback password
+
+captive_portal:
+
+# I2C bus config
+i2c:
+  sda: GPIO22
+  scl: GPIO23
+  scan: true
+  id: bus_a
+
+# Temperature/humidity sensor config
+sensor:
+  - platform: hdc2010
+    i2c_id: bus_a
+    address: 0x40
+    temperature:
+      name: "Living Room Temperature"
+    humidity:
+      name: "Living Room Humidity"
+    update_interval: 60s
+# Light sensor config
+  - platform: opt3001
+    i2c_id: bus_a
+    address: 0x44
+    name: "OPT3001 Illuminance"
+    update_interval: 60s
+
+# mmWave sensor config
+uart:
+  id: uart_ld2410
+  tx_pin: GPIO16
+  rx_pin: GPIO17
+  baud_rate: 256000
+  parity: NONE
+  stop_bits: 1
+
+ld2410:
+  uart_id: uart_ld2410
+
+binary_sensor:
+  - platform: ld2410
+    has_target:
+      name: Presence
+    has_moving_target:
+      name: Moving Target
+    has_still_target:
+      name: Still Target
