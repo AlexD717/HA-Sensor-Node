@@ -1,6 +1,6 @@
 Name,Purpose,Quantity,Link
-XIAO ESP32 C6,Reading sensor data and relaying back to Home Assistant,1,[Seeed Studio](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html)
-LD2401C,Measuring human presence,1,[AliExpress](https://www.aliexpress.us/item/3256807011691559.html)
-Custom PCB,Connecting all the components and providing sensor/humidity/light sensor values,1,[JLCPCB](https://jlcpcb.com/)
-M3x8 Screws,Attaching PCB and 3d prints together,7,[AliExpress](https://www.aliexpress.us/item/3256807078530561.html)
-M3xL3xOD4.2 Heat Set Inserts,Attaching PCB and 3d prints together,7,[AliExpress](https://www.aliexpress.us/item/3256806651793931.html)
+XIAO ESP32 C6,Reading sensor data and relaying back to Home Assistant,1,https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
+LD2401C,Measuring human presence,1,https://www.aliexpress.us/item/3256807011691559.html
+Custom PCB,Connecting all the components and providing sensor/humidity/light sensor values,1,https://jlcpcb.com/
+M3x8 Screws,Attaching PCB and 3d prints together,7,https://www.aliexpress.us/item/3256807078530561.html
+M3xL3xOD4.2 Heat Set Inserts,Attaching PCB and 3d prints together,7,https://www.aliexpress.us/item/3256806651793931.html
